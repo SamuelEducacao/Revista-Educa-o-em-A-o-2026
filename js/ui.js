@@ -73,6 +73,59 @@ function buildArticleCard(item) {
   return article;
 }
 
+function buildArticleNavButton(label, title, href, direction, isDisabled) {
+  const link = document.createElement('a');
+  link.className = `article-nav-button article-nav-${direction}`;
+
+  const labelElement = document.createElement('span');
+  labelElement.className = 'article-nav-label';
+  labelElement.textContent = label;
+
+  const titleElement = document.createElement('span');
+  titleElement.className = 'article-nav-title';
+  titleElement.textContent = title || 'Sem artigo disponível';
+
+  link.append(labelElement, titleElement);
+
+  if (isDisabled) {
+    link.classList.add('is-disabled');
+    link.setAttribute('aria-disabled', 'true');
+    link.tabIndex = -1;
+    return link;
+  }
+
+  link.href = href;
+  return link;
+}
+
+function renderArticleNavigation(articlePage, materias, currentIndex) {
+  const previousItem = currentIndex > 0 ? materias[currentIndex - 1] : null;
+  const nextItem = currentIndex < materias.length - 1 ? materias[currentIndex + 1] : null;
+
+  const nav = document.createElement('nav');
+  nav.className = 'article-sequential-nav';
+  nav.setAttribute('aria-label', 'Navegação entre artigos da edição 2026');
+
+  const previousButton = buildArticleNavButton(
+    '← Artigo anterior',
+    previousItem?.titulo,
+    previousItem ? `${slugify(previousItem.titulo)}.html` : '',
+    'previous',
+    !previousItem,
+  );
+
+  const nextButton = buildArticleNavButton(
+    'Próximo artigo →',
+    nextItem?.titulo,
+    nextItem ? `${slugify(nextItem.titulo)}.html` : '',
+    'next',
+    !nextItem,
+  );
+
+  nav.append(previousButton, nextButton);
+  articlePage.append(nav);
+}
+
 async function loadMaterias() {
   const grid = document.querySelector('#materias-grid');
   if (!grid) return;
@@ -95,7 +148,8 @@ async function loadArticlePage() {
 
   const response = await fetch('../data/materias-2026.json');
   const materias = await response.json();
-  const item = materias.find((materia) => slugify(materia.titulo) === slug);
+  const currentIndex = materias.findIndex((materia) => slugify(materia.titulo) === slug);
+  const item = materias[currentIndex];
 
   if (!item) {
     articlePage.innerHTML = '<p>Artigo não encontrado.</p>';
@@ -121,6 +175,8 @@ async function loadArticlePage() {
   download.href = pdfDownloadUrl;
   iframe.src = `${pdfViewerUrl}#toolbar=1&navpanes=1&scrollbar=1`;
   iframe.title = `Visualização do PDF do artigo ${item.titulo}`;
+
+  renderArticleNavigation(articlePage, materias, currentIndex);
 }
 
 async function loadVolumes() {
