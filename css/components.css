@@ -62,9 +62,19 @@ body.modal-open{overflow:hidden}
 .article-pdf-section{width:min(100%,980px);margin:0 auto}
 .pdf-embed-wrap{border:1px solid var(--line);border-radius:.85rem;overflow:hidden;background:color-mix(in srgb,var(--surface) 92%, #ffffff);box-shadow:0 14px 30px rgba(2,6,23,.07)}
 .pdf-embed{width:100%;height:min(78vh,920px);border:0}
+.article-sequential-nav{width:min(100%,980px);margin:1rem auto 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem}
+.article-nav-button{display:grid;gap:.25rem;width:100%;padding:1rem 1.1rem;border:1px solid color-mix(in srgb,var(--line) 85%, var(--primary) 15%);border-radius:.8rem;background:color-mix(in srgb,var(--surface) 94%, #ffffff);text-decoration:none;color:inherit;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease,background-color .22s ease;box-shadow:0 8px 18px rgba(2,6,23,.05)}
+.article-nav-button:hover{transform:translateY(-2px);box-shadow:0 12px 22px rgba(2,6,23,.1);border-color:color-mix(in srgb,var(--primary) 45%, var(--line));background:color-mix(in srgb,var(--primary) 8%, var(--surface))}
+.article-nav-button:focus-visible{outline:2px solid color-mix(in srgb,var(--primary) 60%, transparent);outline-offset:2px}
+.article-nav-label{font-weight:700}
+.article-nav-title{font-size:.9rem;color:var(--muted);line-height:1.45}
+.article-nav-next{text-align:right}
+.article-nav-button.is-disabled{pointer-events:none;opacity:.55;background:color-mix(in srgb,var(--surface) 86%, transparent);box-shadow:none}
 
 @media (max-width:760px){
   .article-page{padding-top:1rem}
   .article-summary{max-width:100%}
   .pdf-embed{height:70vh}
+  .article-sequential-nav{grid-template-columns:1fr}
+  .article-nav-next{text-align:left}
 }
