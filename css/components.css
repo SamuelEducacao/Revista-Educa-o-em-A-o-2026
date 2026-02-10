@@ -41,3 +41,11 @@ body.modal-open{overflow:hidden}
 .contact-form{display:grid;gap:.55rem;max-width:560px;margin-top:1rem}
 .contact-form input,.contact-form textarea{border:1px solid var(--line);background:var(--surface);padding:.55rem;border-radius:.5rem;color:var(--text)}
 @media (max-width:760px){.theme-toggle{margin-left:auto}.timeline-item{flex-direction:column;align-items:flex-start}.pdf-modal{padding:0}.pdf-modal-content{height:100vh;border-radius:0}.pdf-controls{justify-content:center}}
+
+.editorial-page{display:grid;justify-items:center}
+.editorial-article{width:min(100%,700px)}
+.editorial-header{margin-bottom:2rem}
+.editorial-header h1{margin-bottom:.9rem}
+.editorial-author{font-size:1.02rem;font-weight:700;color:var(--text);margin:.15rem 0}
+.editorial-role{font-size:.95rem;color:var(--muted);margin:.1rem 0 0}
+.editorial-content p{margin:1.1rem 0;line-height:1.9;color:color-mix(in srgb,var(--text) 82%, var(--muted))}
