@@ -2,5 +2,5 @@
 <defs><linearGradient id='g' x1='0' x2='1'><stop stop-color='#0f766e'/><stop offset='1' stop-color='#1e293b'/></linearGradient></defs>
 <rect width='1200' height='675' fill='url(#g)'/>
 <text x='80' y='280' fill='white' font-size='68' font-family='Arial' font-weight='700'>Inovação Pedagógica</text>
-<text x='80' y='360' fill='#c7f9f2' font-size='36' font-family='Arial'>Revista Códex 2026</text>
+<text x='80' y='360' fill='#c7f9f2' font-size='36' font-family='Arial'>Educação em Ação 2026</text>
 </svg>
