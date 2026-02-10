@@ -1,0 +1,44 @@
+[
+  {
+    "ano": "2022",
+    "volume": "Volume 1",
+    "tipo": "pdf",
+    "descricao": "Publicação oficial da revista em formato PDF.",
+    "link": "https://drive.google.com/file/d/147WOMyHSwqvmCHkI0YzXaWFcvpeNJ8pO/view"
+  },
+  {
+    "ano": "2022",
+    "volume": "Volume 2",
+    "tipo": "pdf",
+    "descricao": "Publicação oficial da revista em formato PDF.",
+    "link": "https://drive.google.com/file/d/16RnaRHyHyAbtpTIrZNuO2sqwdDyomuXZ/view"
+  },
+  {
+    "ano": "2023",
+    "volume": "Volume 3",
+    "tipo": "pdf",
+    "descricao": "Publicação oficial da revista em formato PDF.",
+    "link": "https://drive.google.com/file/d/1THrX9zQYuZD6FVAG_-FlzyvXpO7HF5p9/view"
+  },
+  {
+    "ano": "2024",
+    "volume": "Volume 4",
+    "tipo": "pdf",
+    "descricao": "Publicação oficial da revista em formato PDF.",
+    "link": "https://drive.google.com/file/d/1HugXS9DNC4ooFw8j-rVdjNt6K3rwVk5b/view"
+  },
+  {
+    "ano": "2024",
+    "volume": "Volume 5",
+    "tipo": "pdf",
+    "descricao": "Publicação oficial da revista em formato PDF.",
+    "link": "https://drive.google.com/file/d/1DmF9PFFAZQE7OfK5ORpydn67V6xlG89a/view"
+  },
+  {
+    "ano": "2025",
+    "volume": "Volume 6",
+    "tipo": "site",
+    "descricao": "Edição digital oficial com navegação completa por temas.",
+    "link": "https://samueleducacao.github.io/revista-educacao-em-acao-2025/"
+  }
+]

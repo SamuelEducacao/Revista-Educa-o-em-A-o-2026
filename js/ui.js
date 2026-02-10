@@ -74,15 +74,17 @@ async function loadVolumes() {
   const list = document.querySelector('#volumes-list');
   if (!list) return;
 
-  const response = await fetch('data/volumes.json');
+  const response = await fetch('data/volumes-anteriores.json');
   const volumes = await response.json();
 
   list.innerHTML = volumes
     .map((item) => {
-      const icon = item.tipo === 'site' ? '🌐' : '📄';
+      const isSite = item.tipo === 'site';
+      const icon = isSite ? '🔗' : '📄';
       const badgeClass = item.tipo === 'site' ? 'badge-site' : 'badge-pdf';
-      const badgeText = item.tipo === 'site' ? 'Site' : 'PDF';
-      return `<article class="timeline-item"><div><h2>${item.ano} • ${item.volume} ${icon}</h2><p>${item.descricao}</p><span class="badge ${badgeClass}">${badgeText}</span></div><a class="btn" href="${item.link}" target="_blank" rel="noopener">Acessar</a></article>`;
+      const badgeText = isSite ? 'Edição Digital' : 'PDF';
+      const actionText = isSite ? 'Abrir site' : 'Abrir PDF';
+      return `<article class="timeline-item"><div><h2>${item.ano} • ${item.volume} ${icon}</h2><p>${item.descricao}</p><span class="badge ${badgeClass}">${badgeText}</span></div><a class="btn" href="${item.link}" target="_blank" rel="noopener">${actionText}</a></article>`;
     })
     .join('');
 }
