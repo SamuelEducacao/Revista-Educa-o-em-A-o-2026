@@ -1,20 +1,30 @@
 [
   {
-    "ano": "2022",
-    "volume": "Volume 1",
-    "tipo": "pdf",
-    "link": "https://drive.google.com/"
+    "ano": "2025",
+    "volume": "Volume 6",
+    "tipo": "site",
+    "descricao": "Edição digital interativa com navegação completa por temas.",
+    "link": "https://samueleducacao.github.io/revista-educacao-em-acao-2025/"
   },
   {
     "ano": "2024",
     "volume": "Volume 5",
     "tipo": "pdf",
+    "descricao": "Publicação anual com boas práticas pedagógicas da rede.",
     "link": "https://drive.google.com/"
   },
   {
-    "ano": "2025",
-    "volume": "Volume 6",
-    "tipo": "site",
-    "link": "https://samueleducacao.github.io/revista-educacao-em-acao-2025/"
+    "ano": "2023",
+    "volume": "Volume 4",
+    "tipo": "pdf",
+    "descricao": "Dossiê com projetos interdisciplinares e resultados de aprendizagem.",
+    "link": "https://drive.google.com/"
+  },
+  {
+    "ano": "2022",
+    "volume": "Volume 3",
+    "tipo": "pdf",
+    "descricao": "Primeira coleção institucional consolidada da Revista Códex.",
+    "link": "https://drive.google.com/"
   }
 ]
