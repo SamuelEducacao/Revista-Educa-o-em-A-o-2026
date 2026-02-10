@@ -11,7 +11,7 @@ h2{font-size:1.25rem;margin-bottom:.5rem}
 .lead{color:var(--muted)}
 .hero-actions{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.2rem}
 .btn{border:0;background:var(--primary);color:white;padding:.62rem .95rem;border-radius:.6rem;text-decoration:none;cursor:pointer;transition:transform .25s ease,box-shadow .25s ease,background-color .25s ease}
-.btn:hover{transform:translateY(-3px);background:var(--primary-strong);box-shadow:0 12px 28px rgba(15,118,110,.24)}
+.btn:hover{transform:translateY(-3px);background:var(--primary-strong);box-shadow:0 12px 28px color-mix(in srgb, var(--primary) 35%, transparent)}
 .btn:focus-visible{outline:2px solid color-mix(in srgb,var(--primary) 55%, white);outline-offset:2px}
 .btn-secondary{background:var(--accent)}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:.9rem;padding:1rem;box-shadow:0 8px 25px rgba(2,6,23,.04);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
@@ -21,7 +21,7 @@ h2{font-size:1.25rem;margin-bottom:.5rem}
 .timeline{display:grid;gap:.9rem;margin-top:1rem}
 .timeline-item{display:flex;justify-content:space-between;gap:1rem;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:.8rem;padding:1rem}
 .badge{padding:.2rem .55rem;border-radius:999px;font-size:.75rem;font-weight:700}
-.badge-site{background:#dbeafe;color:#1d4ed8}.badge-pdf{background:#fef3c7;color:#92400e}
+.badge-site{background:color-mix(in srgb,var(--primary) 16%, white);color:var(--primary-strong)}.badge-pdf{background:color-mix(in srgb,var(--accent) 18%, white);color:color-mix(in srgb,var(--accent) 70%, #0f2a1b)}
 .filters{display:flex;gap:.5rem;flex-wrap:wrap}
 .filter-btn{border:1px solid var(--line);background:var(--surface);padding:.35rem .7rem;border-radius:999px;cursor:pointer}
 .filter-btn.active{background:var(--primary);color:#fff;border-color:var(--primary)}
