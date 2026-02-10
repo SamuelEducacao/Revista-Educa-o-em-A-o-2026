@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Educação em Ação 2026 | Edição 2026</title>
-    <meta name="description" content="Matérias da Edição 2026 com leitura integrada em modal de tela cheia." />
+    <meta name="description" content="Matérias da Edição 2026 com páginas editoriais para leitura completa dos artigos." />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/components.css" />
@@ -12,35 +12,20 @@
   </head>
   <body>
     <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html">Educação em Ação 2026</a><button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="menu">Menu</button><nav id="menu" class="site-nav" aria-label="Menu principal"><a href="index.html">Início</a><a href="editorial.html">Editorial</a><a class="active" href="edicao-2026.html">Edição 2026</a><a href="volumes-anteriores.html">Volumes Anteriores</a><a href="galeria.html">Galeria</a><a href="secretaria.html">Secretaria</a><a href="contato.html">Contato</a></nav><button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">◐</button></div></header>
+
     <main class="container page-content">
       <h1>Edição 2026</h1>
-      <p class="lead">Selecione um artigo para leitura em tela cheia e navegação de páginas.</p>
+      <p class="lead">Selecione um artigo para abrir a página editorial com informações completas e PDF indexado.</p>
       <section id="materias-grid" class="card-grid" aria-label="Artigos da Edição 2026"></section>
     </main>
 
-    <div id="pdf-modal" class="pdf-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="pdf-modal-title">
-      <div class="pdf-modal-content">
-        <div class="pdf-modal-header">
-          <div>
-            <h2 id="pdf-modal-title"></h2>
-            <p id="pdf-modal-meta"></p>
-          </div>
-          <button id="pdf-close" class="pdf-close" aria-label="Fechar leitor">✕</button>
-        </div>
-
-        <div class="pdf-canvas-wrap" id="pdf-canvas-wrap">
-          <canvas id="pdf-canvas"></canvas>
-        </div>
-
-        <div class="pdf-controls">
-          <button id="pdf-prev" class="btn btn-secondary" type="button">Página anterior</button>
-          <span id="pdf-page-info" aria-live="polite">Página 0 de 0</span>
-          <button id="pdf-next" class="btn btn-secondary" type="button">Próxima página</button>
-          <a id="pdf-download" class="btn" download target="_blank" rel="noopener">Download PDF</a>
-        </div>
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Educação em Ação • Secretaria de Educação</p>
       </div>
-    </div>
+    </footer>
 
-    <script src="js/menu.js" defer></script><script src="js/ui.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/ui.js" defer></script>
   </body>
 </html>
