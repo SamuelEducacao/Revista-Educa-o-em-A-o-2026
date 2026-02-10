@@ -84,33 +84,33 @@
     "linkExterno": "https://drive.google.com/file/d/1XyxjzDzDcO9PvmEwMgZKgOO2EFfqjG2P/view"
   },
   {
-    "titulo": "Os Minicientistas e o Mistério dos Dinossauros",
-    "autor": "Lucimara Aparecida da Costa",
-    "escola": "Escola Municipal Barão de Guaxupé",
+    "titulo": "Autoconhecimento: Protagonismo na Educação Antirracista",
+    "autor": "Mila Russo Calil",
+    "escola": "Escola Municipal Delfim Moreira",
+    "segmento": "Conteúdo Específico – Língua Inglesa",
+    "banner": "assets/img/banners/autoconhecimento-antirracista.jpg",
+    "descricao": "Práticas de educação antirracista integradas a mindfulness e vivências culturais, fortalecendo identidade, empatia e protagonismo infantil.",
+    "arquivoDownload": "https://drive.google.com/file/d/1RvO69f8kkS2YFSJq-33MsHZkjJLF-E68/view",
+    "linkExterno": "https://drive.google.com/file/d/1RvO69f8kkS2YFSJq-33MsHZkjJLF-E68/view"
+  },
+  {
+    "titulo": "Os Alimentos e a Saúde do Corpo",
+    "autor": "Milene Ferreira de Oliveira",
+    "escola": "Secretaria Municipal de Educação",
+    "segmento": "Educação Alimentar e Nutricional – PNAE",
+    "banner": "assets/img/banners/alimentos-e-saude.jpg",
+    "descricao": "Atividade pedagógica sobre hábitos alimentares saudáveis, escolhas conscientes e cuidados com o corpo, promovendo desenvolvimento integral.",
+    "arquivoDownload": "https://drive.google.com/file/d/1vlCQbI81O6NS9t1jbkmPgfOGmTDlwJRC/view",
+    "linkExterno": "https://drive.google.com/file/d/1vlCQbI81O6NS9t1jbkmPgfOGmTDlwJRC/view"
+  },
+  {
+    "titulo": "Musicalização e Cantação de Histórias",
+    "autor": "Paulo Roberto Olinto Filho e Deise de Castro Requena",
+    "escola": "Escola Municipal Elias José – Período Integral",
     "segmento": "Anos Iniciais do Ensino Fundamental",
-    "banner": "assets/img/banners/minicientistas-dinossauros.jpg",
-    "descricao": "Projeto investigativo que integrou Ciências, Língua Portuguesa e Matemática a partir do interesse das crianças pelos dinossauros, promovendo alfabetização científica e protagonismo infantil.",
-    "arquivoDownload": "https://drive.google.com/file/d/1DxTpy1VKAXOX9HPfrexzz1sNYtQWDOSX/view",
-    "linkExterno": "https://drive.google.com/file/d/1DxTpy1VKAXOX9HPfrexzz1sNYtQWDOSX/view"
-  },
-  {
-    "titulo": "Escola, Espaço Poético de Pertencimento",
-    "autor": "Marcela Cristina de Moraes",
-    "escola": "Escola Municipal Noêmia Costa Monteiro",
-    "segmento": "Educação Infantil",
-    "banner": "assets/img/banners/espaco-poetico-pertencimento.jpg",
-    "descricao": "Vivência estética em que as crianças exploraram e registraram fotograficamente os espaços da escola, fortalecendo autoria, pertencimento e sensibilidade poética.",
-    "arquivoDownload": "https://drive.google.com/file/d/18ccIwnCa7ijHYO58G94kVPqUVMrEWh-w/view",
-    "linkExterno": "https://drive.google.com/file/d/18ccIwnCa7ijHYO58G94kVPqUVMrEWh-w/view"
-  },
-  {
-    "titulo": "Vivências com Materiais Não Estruturados na Pré-Escola: Criar, Explorar e Imaginar",
-    "autor": "Marci de Florio",
-    "escola": "E.M. Educadora Yolanda Conti Bertoni",
-    "segmento": "Educação Infantil",
-    "banner": "assets/img/banners/materiais-nao-estruturados.jpg",
-    "descricao": "Experiência de brincar livre com materiais não estruturados e elementos naturais, promovendo imaginação, autonomia, cooperação e protagonismo infantil.",
-    "arquivoDownload": "https://drive.google.com/file/d/1EypW-HQtGEy7xbc1DfRyB2LQhu3lIQ7r/view",
-    "linkExterno": "https://drive.google.com/file/d/1EypW-HQtGEy7xbc1DfRyB2LQhu3lIQ7r/view"
+    "banner": "assets/img/banners/musicalizacao-cantacao.jpg",
+    "descricao": "Projeto de musicalização que integrou música, corpo e contação de histórias como recurso pedagógico para alfabetização e expressão.",
+    "arquivoDownload": "https://drive.google.com/file/d/1ITLqIkVk89oeI_A2rEy3TWicap1ux2C2/view",
+    "linkExterno": "https://drive.google.com/file/d/1ITLqIkVk89oeI_A2rEy3TWicap1ux2C2/view"
   }
 ]
