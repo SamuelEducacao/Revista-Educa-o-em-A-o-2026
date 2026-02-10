@@ -1,0 +1,6 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 600'>
+<rect width='900' height='600' fill='#e2e8f0'/>
+<circle cx='140' cy='120' r='70' fill='#0f766e'/>
+<rect x='70' y='240' width='760' height='290' rx='20' fill='#cbd5e1'/>
+<text x='80' y='420' fill='#1e293b' font-size='56' font-family='Arial' font-weight='700'>Mostra 2026</text>
+</svg>

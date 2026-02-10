@@ -4,38 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Revista Códex 2026 | Edição 2026</title>
+    <meta name="description" content="Matérias da Edição 2026 em cards com visualização ampliada e download." />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/revista.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container nav-wrap">
-        <a class="brand" href="index.html">Revista Códex 2026</a>
-        <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
-        <nav id="menu" class="site-nav" aria-label="Menu principal">
-          <a href="index.html">Início</a>
-          <a href="editorial.html">Editorial</a>
-          <a class="active" href="edicao-2026.html">Edição 2026</a>
-          <a href="volumes-anteriores.html">Volumes Anteriores</a>
-          <a href="galeria.html">Galeria</a>
-          <a href="secretaria.html">Secretaria de Educação</a>
-          <a href="contato.html">Contato / Créditos</a>
-        </nav>
-      </div>
-    </header>
-
+    <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html">Revista Códex 2026</a><button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="menu">Menu</button><nav id="menu" class="site-nav" aria-label="Menu principal"><a href="index.html">Início</a><a href="editorial.html">Editorial</a><a class="active" href="edicao-2026.html">Edição 2026</a><a href="volumes-anteriores.html">Volumes Anteriores</a><a href="galeria.html">Galeria</a><a href="secretaria.html">Secretaria</a><a href="contato.html">Contato</a></nav><button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">◐</button></div></header>
     <main class="container page-content">
       <h1>Edição 2026</h1>
-      <p>Editorial, destaques do fórum e lista de matérias carregadas de <code>data/materias-2026.json</code>.</p>
-      <section>
-        <h2>Matérias</h2>
-        <ul id="materias-list" class="list"></ul>
-      </section>
+      <p class="lead">Selecione um card para ampliar o banner, ler a descrição e baixar o arquivo original.</p>
+      <section id="materias-grid" class="card-grid" aria-label="Artigos da Edição 2026"></section>
     </main>
-
-    <script src="js/menu.js" defer></script>
-    <script src="js/ui.js" defer></script>
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="lightbox-content">
+        <button id="lightbox-close" class="lightbox-close" aria-label="Fechar">×</button>
+        <img id="lightbox-image" alt="" loading="lazy" />
+        <h2 id="lightbox-title"></h2>
+        <p id="lightbox-description"></p>
+        <div class="hero-actions">
+          <a id="lightbox-download" class="btn" download>Baixar arquivo</a>
+          <a id="lightbox-external" class="btn btn-secondary" target="_blank" rel="noopener">Abrir no Google Drive</a>
+        </div>
+      </div>
+    </div>
+    <script src="js/menu.js" defer></script><script src="js/ui.js" defer></script>
   </body>
 </html>

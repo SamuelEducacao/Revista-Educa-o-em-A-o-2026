@@ -1,0 +1,6 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 675'>
+<defs><linearGradient id='g3' x1='0' x2='1'><stop stop-color='#7c3aed'/><stop offset='1' stop-color='#db2777'/></linearGradient></defs>
+<rect width='1200' height='675' fill='url(#g3)'/>
+<text x='80' y='280' fill='white' font-size='68' font-family='Arial' font-weight='700'>Avaliação Formativa</text>
+<text x='80' y='360' fill='#fce7f3' font-size='36' font-family='Arial'>Revista Códex 2026</text>
+</svg>

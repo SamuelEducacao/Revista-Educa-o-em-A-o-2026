@@ -4,35 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Revista Códex 2026 | Galeria</title>
+    <meta name="description" content="Galeria de eventos com filtro por ano e atividade." />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/revista.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container nav-wrap">
-        <a class="brand" href="index.html">Revista Códex 2026</a>
-        <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
-        <nav id="menu" class="site-nav" aria-label="Menu principal">
-          <a href="index.html">Início</a>
-          <a href="editorial.html">Editorial</a>
-          <a href="edicao-2026.html">Edição 2026</a>
-          <a href="volumes-anteriores.html">Volumes Anteriores</a>
-          <a class="active" href="galeria.html">Galeria</a>
-          <a href="secretaria.html">Secretaria de Educação</a>
-          <a href="contato.html">Contato / Créditos</a>
-        </nav>
-      </div>
-    </header>
-
+    <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html">Revista Códex 2026</a><button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="menu">Menu</button><nav id="menu" class="site-nav" aria-label="Menu principal"><a href="index.html">Início</a><a href="editorial.html">Editorial</a><a href="edicao-2026.html">Edição 2026</a><a href="volumes-anteriores.html">Volumes Anteriores</a><a class="active" href="galeria.html">Galeria</a><a href="secretaria.html">Secretaria</a><a href="contato.html">Contato</a></nav><button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">◐</button></div></header>
     <main class="container page-content">
       <h1>Galeria</h1>
-      <p>Grid responsivo alimentado por <code>data/galeria.json</code>.</p>
-      <div id="galeria-grid" class="gallery-grid"></div>
+      <div id="galeria-filtros" class="filters" aria-label="Filtros da galeria"></div>
+      <section id="galeria-grid" class="gallery-grid" aria-label="Imagens da galeria"></section>
     </main>
-
-    <script src="js/menu.js" defer></script>
-    <script src="js/galeria.js" defer></script>
+    <div id="gallery-lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="lightbox-content">
+        <button id="gallery-close" class="lightbox-close" aria-label="Fechar">×</button>
+        <img id="gallery-image" alt="" loading="lazy" />
+        <h2 id="gallery-title"></h2>
+        <p id="gallery-description"></p>
+      </div>
+    </div>
+    <script src="js/menu.js" defer></script><script src="js/ui.js" defer></script><script src="js/galeria.js" defer></script>
   </body>
 </html>

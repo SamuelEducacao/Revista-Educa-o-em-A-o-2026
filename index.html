@@ -4,61 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Revista Códex 2026 | Início</title>
+    <meta
+      name="description"
+      content="Site institucional da Revista Códex 2026 com editorial, edição anual, acervo histórico, galeria e contatos da Secretaria de Educação."
+    />
+    <meta name="theme-color" content="#0f766e" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/revista.css" />
   </head>
   <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
     <header class="site-header">
       <div class="container nav-wrap">
         <a class="brand" href="index.html">Revista Códex 2026</a>
-        <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="menu">
-          Menu
-        </button>
+        <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
         <nav id="menu" class="site-nav" aria-label="Menu principal">
           <a class="active" href="index.html">Início</a>
           <a href="editorial.html">Editorial</a>
           <a href="edicao-2026.html">Edição 2026</a>
           <a href="volumes-anteriores.html">Volumes Anteriores</a>
           <a href="galeria.html">Galeria</a>
-          <a href="secretaria.html">Secretaria de Educação</a>
-          <a href="contato.html">Contato / Créditos</a>
+          <a href="secretaria.html">Secretaria</a>
+          <a href="contato.html">Contato</a>
         </nav>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">◐</button>
       </div>
     </header>
 
-    <main>
+    <main id="conteudo">
       <section class="hero">
-        <div class="container">
-          <p class="eyebrow">Hub institucional anual</p>
-          <h1>Revista Códex 2026</h1>
-          <p>
-            Portal oficial da publicação anual com editorial, edição vigente, acervo histórico,
-            galeria e informações institucionais da Secretaria de Educação.
-          </p>
-          <div class="hero-actions">
-            <a class="btn" href="edicao-2026.html">Acessar edição 2026</a>
-            <a class="btn btn-secondary" href="volumes-anteriores.html">Ver histórico</a>
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Portal oficial • Secretaria de Educação</p>
+            <h1>Revista Códex 2026</h1>
+            <p>
+              Acompanhe a edição anual, acesse volumes anteriores e conheça as iniciativas
+              pedagógicas da rede municipal em uma experiência moderna, acessível e responsiva.
+            </p>
+            <div class="hero-actions">
+              <a class="btn" href="edicao-2026.html">Acessar edição 2026</a>
+              <a class="btn btn-secondary" href="editorial.html">Ler editorial</a>
+            </div>
           </div>
+          <article class="hero-highlight card">
+            <h2>Destaque da Edição</h2>
+            <p>
+              Cards interativos com banners, lightbox de visualização e download direto dos
+              conteúdos publicados em 2026.
+            </p>
+            <a href="edicao-2026.html">Explorar matérias →</a>
+          </article>
         </div>
       </section>
 
       <section class="container cards" aria-label="Acesso rápido">
         <article class="card">
-          <h2>Edição 2026</h2>
-          <p>Conteúdo vivo com matérias, destaques e leitura online.</p>
-          <a href="edicao-2026.html">Explorar edição</a>
-        </article>
-        <article class="card">
           <h2>Volumes Anteriores</h2>
-          <p>Linha do tempo da revista com PDFs e edições digitais interativas.</p>
-          <a href="volumes-anteriores.html">Abrir acervo</a>
+          <p>Histórico 2022–2025 com links para PDF e edição 2025 em site dedicado.</p>
+          <a href="volumes-anteriores.html">Ver acervo</a>
         </article>
         <article class="card">
-          <h2>Secretaria de Educação</h2>
-          <p>Missão, ações do ano, programas e materiais institucionais.</p>
-          <a href="secretaria.html">Conhecer secretaria</a>
+          <h2>Galeria institucional</h2>
+          <p>Registro visual dos eventos pedagógicos com filtro por ano e evento.</p>
+          <a href="galeria.html">Abrir galeria</a>
+        </article>
+        <article class="card">
+          <h2>Secretaria</h2>
+          <p>Missão, programas estratégicos e ações da gestão educacional.</p>
+          <a href="secretaria.html">Conhecer</a>
         </article>
       </section>
     </main>
