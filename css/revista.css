@@ -1,3 +1,75 @@
-.hero p{max-width:60ch;color:var(--muted)}
-.hero-highlight p{margin-bottom:.8rem}
+.hero{
+  position:relative;
+  padding:5rem 0 2.4rem;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 8% 14%, color-mix(in srgb, var(--primary) 18%, transparent) 0%, transparent 45%),
+    radial-gradient(circle at 88% 28%, color-mix(in srgb, var(--accent) 14%, transparent) 0%, transparent 50%),
+    linear-gradient(130deg, color-mix(in srgb, var(--primary) 12%, var(--bg)) 0%, color-mix(in srgb, var(--accent) 9%, var(--bg)) 60%, color-mix(in srgb, var(--bg) 86%, white) 100%);
+}
+.hero::before,
+.hero::after{
+  content:"";
+  position:absolute;
+  pointer-events:none;
+  border-radius:999px;
+  filter:blur(2px);
+}
+.hero::before{
+  width:280px;
+  height:280px;
+  background:color-mix(in srgb, var(--primary) 16%, transparent);
+  top:-110px;
+  right:8%;
+}
+.hero::after{
+  width:220px;
+  height:220px;
+  background:color-mix(in srgb, var(--accent) 12%, transparent);
+  bottom:-110px;
+  left:7%;
+}
+
+.hero-grid{position:relative;z-index:1}
+.home-intro h1{font-size:clamp(2.2rem,5vw,3.9rem);font-weight:850;letter-spacing:-.02em;line-height:1.08;margin:.25rem 0 .95rem}
+.hero p{max-width:58ch;color:color-mix(in srgb,var(--text) 82%, var(--muted));font-size:1.04rem}
+.home-intro p:not(.eyebrow){max-width:52ch}
+
+.hero-actions .btn{
+  padding:.7rem 1.1rem;
+  border-radius:.72rem;
+  box-shadow:0 10px 25px color-mix(in srgb, var(--primary) 24%, transparent);
+}
+
+.hero-highlight{
+  border-radius:1rem;
+  border:1px solid color-mix(in srgb,var(--line) 68%, var(--primary) 22%);
+  background:linear-gradient(170deg, color-mix(in srgb,var(--surface) 90%, #ffffff), color-mix(in srgb,var(--primary) 6%, var(--surface)));
+}
+.hero-highlight h2{font-size:1.35rem;letter-spacing:-.01em}
+.hero-highlight p{margin-bottom:.8rem;max-width:34ch}
+
+.quick-card{
+  border-radius:1rem;
+  border:1px solid color-mix(in srgb,var(--line) 75%, var(--primary) 20%);
+}
+.quick-card h2{display:flex;align-items:center;gap:.5rem;font-size:1.1rem}
+.quick-card h2 span{font-size:1rem;opacity:.85}
+.quick-card p{max-width:40ch}
+
+.home-reveal{
+  opacity:0;
+  transform:translateY(20px);
+  animation:homeReveal .7s cubic-bezier(.22,.61,.36,1) forwards;
+  animation-delay:var(--reveal-delay,0ms);
+}
+
+@keyframes homeReveal{
+  to{opacity:1;transform:translateY(0)}
+}
+
+@media (prefers-reduced-motion: reduce){
+  .home-reveal{animation:none;opacity:1;transform:none}
+}
+
 code{background:color-mix(in srgb,var(--primary) 12%, transparent);padding:.08rem .3rem;border-radius:.25rem}
