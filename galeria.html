@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revista Códex 2026 | Galeria</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/revista.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">Revista Códex 2026</a>
+        <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+        <nav id="menu" class="site-nav" aria-label="Menu principal">
+          <a href="index.html">Início</a>
+          <a href="editorial.html">Editorial</a>
+          <a href="edicao-2026.html">Edição 2026</a>
+          <a href="volumes-anteriores.html">Volumes Anteriores</a>
+          <a class="active" href="galeria.html">Galeria</a>
+          <a href="secretaria.html">Secretaria de Educação</a>
+          <a href="contato.html">Contato / Créditos</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-content">
+      <h1>Galeria</h1>
+      <p>Grid responsivo alimentado por <code>data/galeria.json</code>.</p>
+      <div id="galeria-grid" class="gallery-grid"></div>
+    </main>
+
+    <script src="js/menu.js" defer></script>
+    <script src="js/galeria.js" defer></script>
+  </body>
+</html>

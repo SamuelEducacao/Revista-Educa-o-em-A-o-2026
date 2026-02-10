@@ -1,0 +1,20 @@
+[
+  {
+    "ano": "2022",
+    "volume": "Volume 1",
+    "tipo": "pdf",
+    "link": "https://drive.google.com/"
+  },
+  {
+    "ano": "2024",
+    "volume": "Volume 5",
+    "tipo": "pdf",
+    "link": "https://drive.google.com/"
+  },
+  {
+    "ano": "2025",
+    "volume": "Volume 6",
+    "tipo": "site",
+    "link": "https://samueleducacao.github.io/revista-educacao-em-acao-2025/"
+  }
+]
