@@ -1,30 +1,6 @@
 [
   {
-    "titulo": "Inovação Pedagógica na Rede Municipal",
-    "autor": "Profa. Ana Clara Mendes",
-    "banner": "assets/img/materias/inovacao.svg",
-    "descricao": "Relato de práticas ativas e integração curricular em escolas da rede com foco em autoria estudantil.",
-    "arquivoDownload": "downloads/inovacao-pedagogica.svg",
-    "linkExterno": "https://drive.google.com/"
-  },
-  {
-    "titulo": "Alfabetização em Rede",
-    "autor": "Equipe de Alfabetização",
-    "banner": "assets/img/materias/alfabetizacao.svg",
-    "descricao": "Experiências de acompanhamento pedagógico e recomposição de aprendizagem nos anos iniciais.",
-    "arquivoDownload": "downloads/alfabetizacao-em-rede.svg",
-    "linkExterno": "https://drive.google.com/"
-  },
-  {
-    "titulo": "Avaliação Formativa e Inclusão",
-    "autor": "Núcleo de Avaliação Educacional",
-    "banner": "assets/img/materias/avaliacao.svg",
-    "descricao": "Ferramentas avaliativas para garantir equidade, inclusão e acompanhamento contínuo da aprendizagem.",
-    "arquivoDownload": "downloads/avaliacao-formativa.svg",
-    "linkExterno": "https://drive.google.com/"
-  },
-  {
-    "titulo": "Brinquedos nas Diversas Etnias: Brincar é para Todos!",
+    "titulo": "Pequenos Cozinheiros, Grandes Descobertas",
     "autor": "Cláudia dos Reis Ferreira Souza",
     "escola": "Escola Municipal Noêmia Costa Monteiro",
     "segmento": "Educação Infantil",
